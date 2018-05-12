@@ -1,0 +1,10 @@
+version: '3'
+services:
+    phpsandbox:
+        build:
+            context: './docker'
+            dockerfile: 'Dockerfile'
+        ports:
+            - "1080:80"
+        volumes:
+            - "./html:/var/www/html"
